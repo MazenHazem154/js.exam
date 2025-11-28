@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Movie App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="side-accent" aria-hidden="true"></div>
+
+  <aside class="sidebar" aria-hidden="false">
+    <div class="logo">
+      <img src="./imgs/logo.jpg"alt="logo">
+    </div>
+
+    <button class="menu-icon" aria-label="Open menu">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </button>
+
+    <div class="side-bottom">
+      <button class="tiny-icon" aria-label="Language / Globe">
+        <i class="fa-solid fa-globe"></i>
+      </button>
+
+      <button class="tiny-icon" aria-label="Share">
+        <i class="fa-solid fa-share-nodes"></i>
+      </button>
+    </div>
+  </aside>
+
+  <main>
+    <div class="search-wrap">
+      <input id="search" placeholder="Search" />
+    </div>
+
+    <section id="movies" class="movies" aria-live="polite"></section>
+
+    <section id="contactSection" class="contact-section">
+      <div class="container">
+        <h2 class="contact-title">Contact US</h2>
+
+        <form class="contact-form" autocomplete="off" novalidate>
+          <div class="row">
+            <div class="col">
+              <input id="name" name="name" type="text" placeholder="Enter Your Name" />
+            </div>
+
+            <div class="col">
+              <input id="email" name="email" type="email" placeholder="Enter Your Email" />
+            </div>
+
+            <div class="col">
+              <input id="phone" name="phone" type="tel" placeholder="Enter Your Phone" />
+            </div>
+
+            <div class="col">
+              <input id="age" name="age" type="number" placeholder="Enter Your Age" />
+            </div>
+
+            <div class="col">
+              <input id="password" name="password" type="password" placeholder="Enter Your Password" />
+            </div>
+
+            <div class="col">
+              <input id="repassword" name="repassword" type="password" placeholder="ReEnter Password" />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <nav class="big-menu" id="bigMenu">
+    <div class="menu-content">
+      <ul class="menu-links">
+        <li><a href="#contactSection">Contact Us</a></li>
+        <li><a href="#top">Popular</a></li>
+        <li><a href="#toprated">Top Rated</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#upcoming">Upcoming</a></li>
+        <li><a href="#nowplaying">Now playing</a></li>
+      </ul>
+
+      <div class="menu-footer">
+        <div class="menu-social">
+          <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <p class="copy">Copyright © 2022 All Rights Reserved.<br>
+          Created by <span>Housam Ramadan</span>
+        </p>
+      </div>
+    </div>
+  </nav>
+
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="menu-overlay" tabindex="-1"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
